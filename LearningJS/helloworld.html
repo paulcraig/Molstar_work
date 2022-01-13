@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html> 
+<head>
+  <title>My First JS App</title>
+</head>
+
+<body>
+  <script>
+    // My first app
+    var message = "Hello World!";
+    var br = "<br>";
+    document.write(message, br);
+  </script>
+  <script>
+    var x = 5;
+    var y = 6;
+    var result = x + y;
+    document.write(result, br);
+  </script>
+  <script>
+      const PI = 3.1415926535;
+      var radius = 3;
+      // calculate the area of a circle
+      var area = PI * radius * radius;
+      document.write("area = ", area, br);
+  </script>
+  <script>
+
+    var br = "<br>";
+  
+    var num = 10;
+    var str = "Hello World";
+    var auth = true;
+  
+    document.write("num = ", typeof num);
+    document.write(br);
+    document.write("str = ", typeof str);
+    document.write(br);
+    document.write("auth = ", typeof auth);
+    document.write(br);
+  
+  </script>
+  <script>
+    var num = 10;
+    if (num > 5) {
+        document.write(num, " > 5", br);
+    } else {
+        document.write(num, " < 5", br);
+    }
+  </script>
+  <script>
+      var num = 3;
+      num > 5 ? document.write(num, " > 5") : document.write(num, " < 5");
+      document.write(br)
+  </script>
+  <script>
+
+    var num = 10;
+  
+    if (num > 5) {
+  
+      document.write("num is greater than 5");
+      document.write(br)
+    }
+  
+  </script>
+
+<script>
+
+    var num = 10;
+  
+    if (num > 5 || num < 10) {
+  
+      document.write("num is either less than 10 or greater than 5, or both");
+      document.write(br)
+    }
+  
+  </script>
+
+<script>
+
+    var num = 8;
+  
+    if (num == 11) {
+  
+      document.write("Correct, the mystery number is 11");
+      document.write(" -> first condition tested")
+      document.write(br)
+  
+    } else if (num > 11) {
+  
+      document.write("You've guessed too high, try again");
+      document.write(" -> second condition tested")
+  
+    } else if (num < 11) {
+  
+      document.write("You've guessed too low, try again");
+      document.write(" -> third condition tested")
+      document.write(br)
+    }
+  
+  </script>
+</body>
+</html>
