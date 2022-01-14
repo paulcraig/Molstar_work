@@ -1,0 +1,27 @@
+<html>
+<body>
+  <button>Click Me!</button>
+</body>
+<script>
+  const el = document.querySelector("button");
+
+  // use an anonymous function as a parameter
+  // for the 'addEventListener' method
+  el.addEventListener("click", function() { alert("Be Alert! The world needs more LERTS!"); } );
+
+</script>
+
+<script>
+    // an anonymous function assigned
+    // to a variable becomes a function
+    // expression
+    let alertMe = function() {
+      alert("Alert!");
+    }
+  
+    // the variable name then acts
+    // as the function's name
+    alertMe();
+  </script>
+  
+</html>

@@ -1,0 +1,109 @@
+<html>
+<body>
+  <button>Click Me!</button>
+</body>
+<script>
+  const el = document.querySelector("button");
+
+  // use an arrow function as a parameter
+  // for the 'addEventListener' method
+  el.addEventListener("click", () => { alert("Alert!"); } );
+</script>
+
+<!-- <script>
+    // an arrow function assigned
+    // to a variable becomes a
+    // function expression
+    let greeting = (name) => {
+      alert("Hello " + name);
+    }
+  
+    // the variable name then acts
+    // as the function's name
+    greeting("John");
+  </script> -->
+
+<!-- <script>
+    // the function only has a single
+    // statement so we may omit the
+    // the curly braces
+    let greeting = (name) => alert("Hello " + name);
+  
+    greeting("Peter");
+  </script> -->
+
+  <script>
+    // number to check
+    
+    function numtocheck(num) {
+        if (num % 2 == 0) {
+            document.write("<br>", num, " is an even number");
+        } else {
+            document.write("<br>", num, " is an odd number");
+        }
+ 
+    }
+
+    // if the number can be divided by two
+    // without a remainder, it's an even num
+    var num = 5;
+    numtocheck(num);
+  </script>
+
+<script>
+    // number to check
+    
+    var is_even = (num) => {
+        if (num % 2 == 0) {
+            document.write("<br>", num, " is an even number");
+        } else {
+            document.write("<br>", num, " is an odd number");
+        }
+    }
+
+    // if the number can be divided by two
+    // without a remainder, it's an even num
+    var num = 9;
+    is_even(3);
+    is_even(3.14);
+    is_even(-14);
+    document.write("<br>", "How to create on-click functions", "<br>")
+  </script>
+
+<!-- <script>
+    function alert_user() {
+  
+      alert("Hello there");
+    }
+  </script>
+  
+  <input type="button" value="Help Me" onclick="alert_user()"/> -->
+
+<!--   <script>
+    // get the first button element in the document
+    const btn = document.querySelector('button');
+    
+    // invoke function when the
+    // event listener catches a
+    // click on the button
+    btn.onclick = function() {
+    
+      alert("Hello there");
+    };
+    </script> -->
+
+    <script>
+        // get the first button element in the document
+        const btn = document.querySelector('button');
+        
+        // invoke function when the
+        // event listener catches a
+        // click on the button
+        btn.onclick = function() {
+        
+          alert("Hi there");
+        };
+        
+        </script>
+
+</html>
